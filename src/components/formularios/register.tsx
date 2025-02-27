@@ -16,7 +16,7 @@ export default function RegisterForm() {
         contrasena: "",
     });
 
-    
+    const [isLoading, setIsLoading] = useState(false);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setFormData({
@@ -64,7 +64,7 @@ export default function RegisterForm() {
               console.error("Se ha producido un error desconocido");
             }
           } finally {
-            // setIsLoading(false);
+            setIsLoading(false);
         }
     }
 
@@ -122,7 +122,7 @@ export default function RegisterForm() {
                         className="w-full bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition duration-300"
                        
                     >
-                        {/* {isLoading ? "Cargando..." : "Registrarse"} */}
+                        {isLoading ? "Cargando..." : "Registrarse"}
                         Regisrarse
                     </button>
                 </form>

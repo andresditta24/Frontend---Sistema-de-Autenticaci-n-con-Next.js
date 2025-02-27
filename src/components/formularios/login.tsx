@@ -84,7 +84,7 @@ export default function LoginForm() {
         <p className="text-sm text-gray-500 text-center mt-4">
           ¿No tienes cuenta?{" "}
           <a href="/auth/register" className="text-blue-600 hover:underline">
-            Regístrate aquí
+          {isLoading ? "Cargando..." : "Ingresar"}
           </a>
         </p>
       </div>
