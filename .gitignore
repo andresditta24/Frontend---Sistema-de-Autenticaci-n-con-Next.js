@@ -1,0 +1,16 @@
+# Node modules
+node_modules/
+
+# Variables de entorno
+.env
+
+# Prisma
+prisma/migrations/
+prisma/dev.db
+prisma/dev.db-journal
+
+# Logs y caché
+npm-debug.log
+yarn-error.log
+.DS_Store
+dist/
